@@ -1,0 +1,134 @@
+/* CSS Reset Rules */
+
+body, header, nav, main, footer, h1, div, img, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} 
+
+/* Style rule for images */
+img {
+    max-width: 50%;
+    display: block;
+
+}
+
+/* Style rules for header */
+header {
+    text-align: center;
+    font-size: 3em;
+    color: #373684;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+body {
+    background-color: #Add8E6;
+}
+
+/* Style Rules for Nav */
+nav {
+    float: center;
+    margin: 5em, 3em 0 0;
+    width: 70%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.75em;
+    font-family: 'Oswald';
+    
+}
+
+nav li a{
+    display: block;
+    color: #373684;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Show mobile class, hide tablet-desktop class*/
+.mobile {
+    display: block;
+}
+
+tablet-desktop {
+    display: none;
+}
+
+/* Style Rules for main element */
+main {
+    background-color:#Add8E6;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Roboto Condensed';
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+
+}
+
+/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+.tablet-desktop {
+    display: block;
+
+}
+
+.mobile {
+    display: none;
+}
+
+/* Tablet Viewport: Style Rules for header */
+header {
+    position: static;
+    padding-bottom: 2%;
+}
+
+/* Tablet Viewport: Style Rules for nav area */
+nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1 px solid #373684;
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+
+}
+
+/* Desktop Viewport: Style Rule for Header */
+header {
+    width: 25%;
+    float: right;
+    padding-bottom: 0;
+}
+
+/* Desktop Viewport: Style Rule for Main Content */
+main {
+    clear: left;
+}
+ main h1{
+    font-size: 1.8em;
+ }
